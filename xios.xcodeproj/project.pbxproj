@@ -15,6 +15,7 @@
 		988BEC001E14025B00596930 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988BEBFF1E14025B00596930 /* DetailViewController.m */; };
 		98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BAD0DA1E1548680002EC26 /* AppDelegate.m */; };
 		98BAD0DD1E1549870002EC26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */; };
+		98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BAD0E11E155A6E0002EC26 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		988BEBFF1E14025B00596930 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		98BAD0DA1E1548680002EC26 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		98BAD0E01E155A6E0002EC26 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		98BAD0E11E155A6E0002EC26 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		988BEBC61E13FCA900596930 /* xios */ = {
 			isa = PBXGroup;
 			children = (
+				98BAD0DE1E1559590002EC26 /* Utils */,
 				988BEC031E14094400596930 /* Images */,
 				988BEBFA1E13FF7100596930 /* Controller */,
 				988BEBCA1E13FCA900596930 /* AppDelegate.h */,
@@ -156,6 +160,15 @@
 				98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		98BAD0DE1E1559590002EC26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98BAD0E01E155A6E0002EC26 /* UIColor+Hex.h */,
+				98BAD0E11E155A6E0002EC26 /* UIColor+Hex.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */,
+				98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */,
 				988BEBFD1E13FF9E00596930 /* MainViewController.m in Sources */,
 				988BEBC91E13FCA900596930 /* main.m in Sources */,
 				988BEC001E14025B00596930 /* DetailViewController.m in Sources */,

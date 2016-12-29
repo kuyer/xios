@@ -17,10 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor brownColor];
+    self.view.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0];
     
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    backBtn.frame = CGRectMake(50, 50, 240, 40);
+    backBtn.frame = CGRectMake(50, 50, self.view.frame.size.width-100, 40);
     [backBtn setTitle:@"Back" forState:UIControlStateNormal];
     backBtn.titleLabel.font = [UIFont systemFontOfSize:24];
     [backBtn addTarget:self action:@selector(onBackBtn) forControlEvents:UIControlEventTouchUpInside];

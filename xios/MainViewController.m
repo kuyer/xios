@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DetailViewController.h"
+#import "UIColor+Hex.h"
 
 @interface MainViewController ()
 
@@ -18,10 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
+    
+    UIView *headView = [[UIView alloc] init];
+    headView.frame = CGRectMake(0, 0, self.view.frame.size.width, 60);
+    headView.backgroundColor = [UIColor colorWithHexString:@"#3c8dbc"];
+    //headView.backgroundColor = [UIColor blueColor];
+    headView.tag = 1000;
+    //headView.alpha = 0.8;
+    headView.clipsToBounds = YES;
+    [self.view addSubview:headView];
     
     UIButton *enterBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    enterBtn.frame = CGRectMake(50, 50, 240, 40);
+    enterBtn.frame = CGRectMake(50, 50, self.view.frame.size.width-100, 40);
     [enterBtn setTitle:@"Next View" forState:UIControlStateNormal];
     enterBtn.titleLabel.font = [UIFont systemFontOfSize:24];
     [enterBtn addTarget:self action:@selector(onEnterBtn) forControlEvents:UIControlEventTouchUpInside];
@@ -45,8 +55,12 @@
 
 - (void) onEnterBtn {
     DetailViewController *detailViewController = [[DetailViewController alloc] init];
-    detailViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    detailViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:detailViewController animated:true completion:nil];
+}
+
+- (UIStatusBarStyle) preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end
