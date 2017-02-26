@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "FirstViewController.h"
 #import "UIColor+Hex.h"
 
 @interface AppDelegate ()
@@ -22,8 +23,10 @@
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor colorWithHexString:@"#f8f8f8"];
-    MainViewController *mainViewController = [[MainViewController alloc] init];
-    self.window.rootViewController = mainViewController;
+    //MainViewController *mainViewController = [[MainViewController alloc] init];
+    //self.window.rootViewController = mainViewController;
+    FirstViewController *firstViewController = [[FirstViewController alloc] init];
+    self.window.rootViewController = firstViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

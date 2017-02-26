@@ -19,19 +19,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0];
+
     UIView *headView = [[UIView alloc] init];
     headView.frame = CGRectMake(0, 0, self.view.frame.size.width, 60);
     headView.backgroundColor = [UIColor colorWithHexString:@"#3c8dbc"];
     //headView.backgroundColor = [UIColor blueColor];
-    headView.tag = 1000;
+    //headView.tag = 1000;
     //headView.alpha = 0.8;
     headView.clipsToBounds = YES;
     [self.view addSubview:headView];
     
+    UIView *footView = [[UIView alloc] init];
+    footView.frame = CGRectMake(0, self.view.frame.size.height-40, self.view.frame.size.width, 40);
+    footView.backgroundColor = [UIColor colorWithHexString:@"#f8f8f8"];
+    //footView.tag = 1000;
+    footView.layer.borderWidth = 1.0f;
+    footView.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor redColor]);
+    footView.clipsToBounds = YES;
+    [self.view addSubview:footView];
+    
     UIButton *enterBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    enterBtn.frame = CGRectMake(50, 50, self.view.frame.size.width-100, 40);
+    enterBtn.frame = CGRectMake(50, 150, self.view.frame.size.width-100, 40);
     [enterBtn setTitle:@"Next View" forState:UIControlStateNormal];
     enterBtn.titleLabel.font = [UIFont systemFontOfSize:24];
     [enterBtn addTarget:self action:@selector(onEnterBtn) forControlEvents:UIControlEventTouchUpInside];

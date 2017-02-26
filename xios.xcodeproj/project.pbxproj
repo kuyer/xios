@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9886B82E1E62A1FB009655BB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9886B82D1E62A1FB009655BB /* FirstViewController.m */; };
+		9886B8311E62A814009655BB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9886B8301E62A814009655BB /* SecondViewController.m */; };
 		988BEBC91E13FCA900596930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 988BEBC81E13FCA900596930 /* main.m */; };
 		988BEBD41E13FCA900596930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988BEBD31E13FCA900596930 /* Assets.xcassets */; };
 		988BEBE21E13FCA900596930 /* xiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 988BEBE11E13FCA900596930 /* xiosTests.m */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9886B82C1E62A1FB009655BB /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9886B82D1E62A1FB009655BB /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9886B82F1E62A814009655BB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9886B8301E62A814009655BB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		988BEBC41E13FCA900596930 /* xios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988BEBC81E13FCA900596930 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		988BEBCA1E13FCA900596930 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +156,10 @@
 				988BEBFC1E13FF9E00596930 /* MainViewController.m */,
 				988BEBFE1E14025B00596930 /* DetailViewController.h */,
 				988BEBFF1E14025B00596930 /* DetailViewController.m */,
+				9886B82C1E62A1FB009655BB /* FirstViewController.h */,
+				9886B82D1E62A1FB009655BB /* FirstViewController.m */,
+				9886B82F1E62A814009655BB /* SecondViewController.h */,
+				9886B8301E62A814009655BB /* SecondViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -304,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */,
+				9886B82E1E62A1FB009655BB /* FirstViewController.m in Sources */,
 				98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */,
+				9886B8311E62A814009655BB /* SecondViewController.m in Sources */,
 				988BEBFD1E13FF9E00596930 /* MainViewController.m in Sources */,
 				988BEBC91E13FCA900596930 /* main.m in Sources */,
 				988BEC001E14025B00596930 /* DetailViewController.m in Sources */,
