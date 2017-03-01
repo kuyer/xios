@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController {
+@interface SecondViewController : UIViewController<UIAlertViewDelegate> {
     
     //选择器
     UISwitch *_switcher;
@@ -20,6 +20,10 @@
     UIStepper *_stepper;
     //分栏控制器
     UISegmentedControl *_segmenter;
+    //弹出提示框
+    UIAlertView *_alerter;
+    //等待提示
+    UIActivityIndicatorView *_indicator;
     
 }
 
@@ -28,5 +32,7 @@
 @property (retain, nonatomic) UISlider *slider;
 @property (retain, nonatomic) UIStepper *stepper;
 @property (retain, nonatomic) UISegmentedControl *segmenter;
+@property (retain, nonatomic) UIAlertView *alerter;
+@property (retain, nonatomic) UIActivityIndicatorView *indicator;
 
 @end

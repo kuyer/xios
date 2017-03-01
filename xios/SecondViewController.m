@@ -19,6 +19,8 @@
 @synthesize slider = _slider;
 @synthesize stepper = _stepper;
 @synthesize segmenter = _segmenter;
+@synthesize alerter = _alerter;
+@synthesize indicator = _indicator;
 
 // 屏幕被点击时调用
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -71,7 +73,7 @@
     [self.view addSubview:_slider];
     
     _stepper = [[UIStepper alloc] init];
-    _stepper.frame = CGRectMake(10, 220, 200, 40);
+    _stepper.frame = CGRectMake(10, 220, 300, 40);
     _stepper.minimumValue = 0;
     _stepper.maximumValue = 100;
     _stepper.value = 10;
@@ -80,6 +82,14 @@
     _stepper.continuous = YES;
     [_stepper addTarget:self action:@selector(changeStepper) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:_stepper];
+    
+    _segmenter = [[UISegmentedControl alloc] init];
+    _segmenter.frame = CGRectMake(10, 280, 200, 40);
+    [_segmenter insertSegmentWithTitle:@"0元" atIndex:0 animated:YES];
+    [_segmenter insertSegmentWithTitle:@"20元" atIndex:1 animated:YES];
+    [_segmenter insertSegmentWithTitle:@"50元" atIndex:2 animated:YES];
+    [_segmenter addTarget:self action:@selector(changeSegmenter) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:_segmenter];
 }
 
 // 内存不足时被调用
@@ -104,6 +114,30 @@
 
 - (void) changeStepper {
     NSLog(@"change stepper. value=%f.", _stepper.value);
+}
+
+- (void) changeSegmenter {
+    NSLog(@"change segmenter. value=%ld.", _segmenter.selectedSegmentIndex);
+    if (_segmenter.selectedSegmentIndex == 1) {
+        _alerter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"确定要购买吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", @"等待", nil];
+        [_alerter show];
+    } else if (_segmenter.selectedSegmentIndex ==2) {
+        _indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(10, 340, 300, 40)];
+        _indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        [self.view addSubview:_indicator];
+        [_indicator startAnimating];
+        //[_indicator stopAnimating];
+    }
+}
+
+-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSLog(@"alerter clicked, index=%ld.", buttonIndex);
+}
+-(void) alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
+    NSLog(@"alerter will dismiss, index=%ld.", buttonIndex);
+}
+-(void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    NSLog(@"alerter did dismiss, index=%ld", buttonIndex);
 }
 
 /*
