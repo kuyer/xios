@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "SecondViewController.h"
+#import "LoginViewController.h"
+#import "ImageViewController.h"
 
 @interface FirstViewController : UIViewController {
     
     NSTimer *_timer;// 定时器
+    
+    CGPoint _lastPoint;
     
 }
 

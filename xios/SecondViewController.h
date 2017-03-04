@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController<UIAlertViewDelegate> {
+@interface SecondViewController : UIViewController<UITextFieldDelegate> /* UIViewController<UIAlertViewDelegate>*/ {
     
     //选择器
     UISwitch *_switcher;
@@ -24,6 +24,7 @@
     UIAlertView *_alerter;
     //等待提示
     UIActivityIndicatorView *_indicator;
+    UITextField *_editer;
     
 }
 
@@ -34,5 +35,6 @@
 @property (retain, nonatomic) UISegmentedControl *segmenter;
 @property (retain, nonatomic) UIAlertView *alerter;
 @property (retain, nonatomic) UIActivityIndicatorView *indicator;
+@property (retain, nonatomic) UITextField *editor;
 
 @end

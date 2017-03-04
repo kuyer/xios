@@ -21,11 +21,7 @@
 @synthesize segmenter = _segmenter;
 @synthesize alerter = _alerter;
 @synthesize indicator = _indicator;
-
-// 屏幕被点击时调用
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+@synthesize editor = _editer;
 
 // 屏幕被点击时调用
 - (void)viewDidLoad {
@@ -34,19 +30,17 @@
     NSLog(@"SecondViewController did load.");
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _switcher = [[UISwitch alloc] init];
-    _switcher.frame = CGRectMake(20, 40, 80, 40);
-    //_switcher.on = YES;
-    //[_switcher setOn:YES];
-    [_switcher setOn:YES animated:YES];
-    //设置开关选中颜色
-    [_switcher setOnTintColor: [UIColor redColor]];
-    //设置开关按钮颜色
-    [_switcher setThumbTintColor: [UIColor blueColor]];
-    //设置开关风格颜色
-    [_switcher setTintColor: [UIColor purpleColor]];
-    [_switcher addTarget:self action:@selector(changeSwitcher:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:_switcher];
+    _editer = [[UITextField alloc] init];
+    self.editor.frame = CGRectMake(10, 40, 300, 40);
+    _editer.text = @"kuyer";
+    self.editor.placeholder = @"请输入帐号";
+    self.editor.font = [UIFont systemFontOfSize: 28];
+    self.editor.textColor = [UIColor blueColor];
+    self.editor.borderStyle = UITextBorderStyleRoundedRect;
+    self.editor.keyboardType = UIKeyboardTypeDefault;
+    self.editor.secureTextEntry = NO;
+    self.editor.delegate = self;
+    [self.view addSubview:self.editor];
     
     _progresser = [[UIProgressView alloc] init];
     _progresser.frame = CGRectMake(10, 100, 200, 40);
@@ -90,6 +84,20 @@
     [_segmenter insertSegmentWithTitle:@"50元" atIndex:2 animated:YES];
     [_segmenter addTarget:self action:@selector(changeSegmenter) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:_segmenter];
+    
+    _switcher = [[UISwitch alloc] init];
+    _switcher.frame = CGRectMake(20, 340, 80, 40);
+    //_switcher.on = YES;
+    //[_switcher setOn:YES];
+    [_switcher setOn:YES animated:YES];
+    //设置开关选中颜色
+    [_switcher setOnTintColor: [UIColor redColor]];
+    //设置开关按钮颜色
+    [_switcher setThumbTintColor: [UIColor blueColor]];
+    //设置开关风格颜色
+    [_switcher setTintColor: [UIColor purpleColor]];
+    [_switcher addTarget:self action:@selector(changeSwitcher:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:_switcher];
 }
 
 // 内存不足时被调用
@@ -97,6 +105,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     NSLog(@"SecondViewController recevie memory warning.");
+}
+
+// 屏幕被点击时调用
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.editor resignFirstResponder];
 }
 
 - (void) changeSwitcher:(UISwitch *) switcher {
@@ -127,9 +140,25 @@
         [self.view addSubview:_indicator];
         [_indicator startAnimating];
         //[_indicator stopAnimating];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
+- (BOOL) textFieldShouldBeginEditing:(UITextField *)textField {
+    return YES;
+}
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField {
+    return YES;
+}
+- (void) textFieldDidBeginEditing:(UITextField *)textField {
+    NSLog(@"editor start editing.");
+}
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+    NSLog(@"editor end editing.");
+}
+
+/*
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     NSLog(@"alerter clicked, index=%ld.", buttonIndex);
 }
@@ -139,6 +168,7 @@
 -(void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     NSLog(@"alerter did dismiss, index=%ld", buttonIndex);
 }
+*/
 
 /*
 #pragma mark - Navigation
