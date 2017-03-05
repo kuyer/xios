@@ -54,6 +54,12 @@
     [elementBtn addTarget:self action:@selector(doElement) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:elementBtn];
     
+    UIButton *gestureBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    gestureBtn.frame = CGRectMake(100, 350, 100, 40);
+    [gestureBtn setTitle:@"手势" forState:UIControlStateNormal];
+    [gestureBtn addTarget:self action:@selector(doGuesture) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:gestureBtn];
+    
     UIView *view = [[UIView alloc] init];
     view.frame = CGRectMake(0, 0, 80, 80);
     view.backgroundColor = [UIColor blueColor];
@@ -74,6 +80,11 @@
 - (void) doElement {
     SecondViewController *secondViewController = [[SecondViewController alloc] init];
     [self presentViewController:secondViewController animated:YES completion:nil];
+}
+
+- (void) doGuesture {
+    GestureViewController *gestureViewController = [[GestureViewController alloc] init];
+    [self presentViewController:gestureViewController animated:YES completion:nil];
 }
 
 // 视图显示之前时调用

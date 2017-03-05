@@ -10,6 +10,7 @@
 #import "SecondViewController.h"
 #import "LoginViewController.h"
 #import "ImageViewController.h"
+#import "GestureViewController.h"
 
 @interface FirstViewController : UIViewController {
     
