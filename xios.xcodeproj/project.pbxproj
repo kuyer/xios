@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9808CF841E76F55200E2D36D /* Layout1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808CF831E76F55200E2D36D /* Layout1ViewController.m */; };
+		9808CF881E76F62100E2D36D /* Layout1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808CF871E76F62100E2D36D /* Layout1View.m */; };
 		9886B82E1E62A1FB009655BB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9886B82D1E62A1FB009655BB /* FirstViewController.m */; };
 		9886B8311E62A814009655BB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9886B8301E62A814009655BB /* SecondViewController.m */; };
 		988BEBC91E13FCA900596930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 988BEBC81E13FCA900596930 /* main.m */; };
@@ -25,6 +27,7 @@
 		98A975421E6ABD8C0001A14D /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 98A9753B1E6ABD8C0001A14D /* 5.jpeg */; };
 		98A975431E6ABD8C0001A14D /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 98A9753C1E6ABD8C0001A14D /* 6.jpeg */; };
 		98A975441E6ABD8C0001A14D /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 98A9753D1E6ABD8C0001A14D /* 7.jpeg */; };
+		98AB1A561E6F019D00747627 /* GestureNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AB1A551E6F019D00747627 /* GestureNextViewController.m */; };
 		98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BAD0DA1E1548680002EC26 /* AppDelegate.m */; };
 		98BAD0DD1E1549870002EC26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */; };
 		98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BAD0E11E155A6E0002EC26 /* UIColor+Hex.m */; };
@@ -48,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9808CF821E76F55200E2D36D /* Layout1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout1ViewController.h; sourceTree = "<group>"; };
+		9808CF831E76F55200E2D36D /* Layout1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout1ViewController.m; sourceTree = "<group>"; };
+		9808CF861E76F62100E2D36D /* Layout1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout1View.h; sourceTree = "<group>"; };
+		9808CF871E76F62100E2D36D /* Layout1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout1View.m; sourceTree = "<group>"; };
 		9886B82C1E62A1FB009655BB /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		9886B82D1E62A1FB009655BB /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9886B82F1E62A814009655BB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -80,6 +87,8 @@
 		98A9753B1E6ABD8C0001A14D /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpeg; path = ../../../../../Downloads/5.jpeg; sourceTree = "<group>"; };
 		98A9753C1E6ABD8C0001A14D /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpeg; path = ../../../../../Downloads/6.jpeg; sourceTree = "<group>"; };
 		98A9753D1E6ABD8C0001A14D /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpeg; path = ../../../../../Downloads/7.jpeg; sourceTree = "<group>"; };
+		98AB1A541E6F019D00747627 /* GestureNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureNextViewController.h; sourceTree = "<group>"; };
+		98AB1A551E6F019D00747627 /* GestureNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureNextViewController.m; sourceTree = "<group>"; };
 		98BAD0DA1E1548680002EC26 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
 		98BAD0E01E155A6E0002EC26 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -111,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9808CF851E76F5F100E2D36D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9808CF861E76F62100E2D36D /* Layout1View.h */,
+				9808CF871E76F62100E2D36D /* Layout1View.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		988BEBBB1E13FCA900596930 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +152,7 @@
 		988BEBC61E13FCA900596930 /* xios */ = {
 			isa = PBXGroup;
 			children = (
+				9808CF851E76F5F100E2D36D /* View */,
 				98BAD0DE1E1559590002EC26 /* Utils */,
 				988BEC031E14094400596930 /* Images */,
 				988BEBFA1E13FF7100596930 /* Controller */,
@@ -189,6 +208,10 @@
 				98A975351E6AB7A60001A14D /* ImageViewController.m */,
 				989F03CA1E6C4FCF00F86BA5 /* GestureViewController.h */,
 				989F03CB1E6C4FCF00F86BA5 /* GestureViewController.m */,
+				98AB1A541E6F019D00747627 /* GestureNextViewController.h */,
+				98AB1A551E6F019D00747627 /* GestureNextViewController.m */,
+				9808CF821E76F55200E2D36D /* Layout1ViewController.h */,
+				9808CF831E76F55200E2D36D /* Layout1ViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -356,6 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9808CF881E76F62100E2D36D /* Layout1View.m in Sources */,
+				9808CF841E76F55200E2D36D /* Layout1ViewController.m in Sources */,
 				98A975331E6AA91A0001A14D /* LoginViewController.m in Sources */,
 				98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */,
 				9886B82E1E62A1FB009655BB /* FirstViewController.m in Sources */,
@@ -365,6 +390,7 @@
 				988BEBFD1E13FF9E00596930 /* MainViewController.m in Sources */,
 				98A975361E6AB7A60001A14D /* ImageViewController.m in Sources */,
 				988BEBC91E13FCA900596930 /* main.m in Sources */,
+				98AB1A561E6F019D00747627 /* GestureNextViewController.m in Sources */,
 				988BEC001E14025B00596930 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

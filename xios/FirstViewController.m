@@ -60,6 +60,18 @@
     [gestureBtn addTarget:self action:@selector(doGuesture) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:gestureBtn];
     
+    UIButton *gestureNextBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    gestureNextBtn.frame = CGRectMake(100, 400, 100, 40);
+    [gestureNextBtn setTitle:@"手势下一步" forState:UIControlStateNormal];
+    [gestureNextBtn addTarget:self action:@selector(doGuestureNext) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:gestureNextBtn];
+    
+    UIButton *layout1Btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    layout1Btn.frame = CGRectMake(100, 450, 100, 40);
+    [layout1Btn setTitle:@"布局一" forState:UIControlStateNormal];
+    [layout1Btn addTarget:self action:@selector(doLayout1) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:layout1Btn];
+    
     UIView *view = [[UIView alloc] init];
     view.frame = CGRectMake(0, 0, 80, 80);
     view.backgroundColor = [UIColor blueColor];
@@ -85,6 +97,16 @@
 - (void) doGuesture {
     GestureViewController *gestureViewController = [[GestureViewController alloc] init];
     [self presentViewController:gestureViewController animated:YES completion:nil];
+}
+
+- (void) doGuestureNext {
+    GestureNextViewController *gestureNextViewController = [[GestureNextViewController alloc] init];
+    [self presentViewController:gestureNextViewController animated:YES completion:nil];
+}
+
+- (void) doLayout1 {
+    Layout1ViewController *vc = [[Layout1ViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 // 视图显示之前时调用

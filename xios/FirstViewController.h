@@ -11,6 +11,8 @@
 #import "LoginViewController.h"
 #import "ImageViewController.h"
 #import "GestureViewController.h"
+#import "GestureNextViewController.h"
+#import "Layout1ViewController.h"
 
 @interface FirstViewController : UIViewController {
     
