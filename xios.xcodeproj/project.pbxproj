@@ -18,6 +18,7 @@
 		988BEBFD1E13FF9E00596930 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988BEBFC1E13FF9E00596930 /* MainViewController.m */; };
 		988BEC001E14025B00596930 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988BEBFF1E14025B00596930 /* DetailViewController.m */; };
 		989F03CC1E6C4FCF00F86BA5 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989F03CB1E6C4FCF00F86BA5 /* GestureViewController.m */; };
+		98A1D28C1E7847B500395DE0 /* Layout2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A1D28B1E7847B500395DE0 /* Layout2ViewController.m */; };
 		98A975331E6AA91A0001A14D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A975321E6AA91A0001A14D /* LoginViewController.m */; };
 		98A975361E6AB7A60001A14D /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A975351E6AB7A60001A14D /* ImageViewController.m */; };
 		98A9753E1E6ABD8C0001A14D /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 98A975371E6ABD8C0001A14D /* 1.jpeg */; };
@@ -76,6 +77,8 @@
 		988BEBFF1E14025B00596930 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		989F03CA1E6C4FCF00F86BA5 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		989F03CB1E6C4FCF00F86BA5 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		98A1D28A1E7847B500395DE0 /* Layout2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout2ViewController.h; sourceTree = "<group>"; };
+		98A1D28B1E7847B500395DE0 /* Layout2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout2ViewController.m; sourceTree = "<group>"; };
 		98A975311E6AA91A0001A14D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		98A975321E6AA91A0001A14D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		98A975341E6AB7A60001A14D /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 				98AB1A551E6F019D00747627 /* GestureNextViewController.m */,
 				9808CF821E76F55200E2D36D /* Layout1ViewController.h */,
 				9808CF831E76F55200E2D36D /* Layout1ViewController.m */,
+				98A1D28A1E7847B500395DE0 /* Layout2ViewController.h */,
+				98A1D28B1E7847B500395DE0 /* Layout2ViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				98A975331E6AA91A0001A14D /* LoginViewController.m in Sources */,
 				98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */,
 				9886B82E1E62A1FB009655BB /* FirstViewController.m in Sources */,
+				98A1D28C1E7847B500395DE0 /* Layout2ViewController.m in Sources */,
 				98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */,
 				989F03CC1E6C4FCF00F86BA5 /* GestureViewController.m in Sources */,
 				9886B8311E62A814009655BB /* SecondViewController.m in Sources */,

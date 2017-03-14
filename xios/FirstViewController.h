@@ -13,6 +13,7 @@
 #import "GestureViewController.h"
 #import "GestureNextViewController.h"
 #import "Layout1ViewController.h"
+#import "Layout2ViewController.h"
 
 @interface FirstViewController : UIViewController {
     

@@ -105,7 +105,11 @@
 }
 
 - (void) doLayout1 {
+    /**
     Layout1ViewController *vc = [[Layout1ViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+    **/
+    Layout2ViewController *vc = [[Layout2ViewController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
