@@ -32,6 +32,9 @@
 		98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BAD0DA1E1548680002EC26 /* AppDelegate.m */; };
 		98BAD0DD1E1549870002EC26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */; };
 		98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BAD0E11E155A6E0002EC26 /* UIColor+Hex.m */; };
+		98E457231E7D6C6800AF3D34 /* Layout3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E457221E7D6C6800AF3D34 /* Layout3ViewController.m */; };
+		98E457261E7D716A00AF3D34 /* Layout31ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E457251E7D716A00AF3D34 /* Layout31ViewController.m */; };
+		98E457291E7D717A00AF3D34 /* Layout32ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E457281E7D717A00AF3D34 /* Layout32ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,12 @@
 		98BAD0DC1E1549870002EC26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
 		98BAD0E01E155A6E0002EC26 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		98BAD0E11E155A6E0002EC26 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		98E457211E7D6C6800AF3D34 /* Layout3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout3ViewController.h; sourceTree = "<group>"; };
+		98E457221E7D6C6800AF3D34 /* Layout3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout3ViewController.m; sourceTree = "<group>"; };
+		98E457241E7D716A00AF3D34 /* Layout31ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout31ViewController.h; sourceTree = "<group>"; };
+		98E457251E7D716A00AF3D34 /* Layout31ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout31ViewController.m; sourceTree = "<group>"; };
+		98E457271E7D717A00AF3D34 /* Layout32ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout32ViewController.h; sourceTree = "<group>"; };
+		98E457281E7D717A00AF3D34 /* Layout32ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout32ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +226,12 @@
 				9808CF831E76F55200E2D36D /* Layout1ViewController.m */,
 				98A1D28A1E7847B500395DE0 /* Layout2ViewController.h */,
 				98A1D28B1E7847B500395DE0 /* Layout2ViewController.m */,
+				98E457211E7D6C6800AF3D34 /* Layout3ViewController.h */,
+				98E457221E7D6C6800AF3D34 /* Layout3ViewController.m */,
+				98E457241E7D716A00AF3D34 /* Layout31ViewController.h */,
+				98E457251E7D716A00AF3D34 /* Layout31ViewController.m */,
+				98E457271E7D717A00AF3D34 /* Layout32ViewController.h */,
+				98E457281E7D717A00AF3D34 /* Layout32ViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -387,9 +402,12 @@
 				9808CF881E76F62100E2D36D /* Layout1View.m in Sources */,
 				9808CF841E76F55200E2D36D /* Layout1ViewController.m in Sources */,
 				98A975331E6AA91A0001A14D /* LoginViewController.m in Sources */,
+				98E457231E7D6C6800AF3D34 /* Layout3ViewController.m in Sources */,
+				98E457261E7D716A00AF3D34 /* Layout31ViewController.m in Sources */,
 				98BAD0DB1E1548680002EC26 /* AppDelegate.m in Sources */,
 				9886B82E1E62A1FB009655BB /* FirstViewController.m in Sources */,
 				98A1D28C1E7847B500395DE0 /* Layout2ViewController.m in Sources */,
+				98E457291E7D717A00AF3D34 /* Layout32ViewController.m in Sources */,
 				98BAD0E21E155A6E0002EC26 /* UIColor+Hex.m in Sources */,
 				989F03CC1E6C4FCF00F86BA5 /* GestureViewController.m in Sources */,
 				9886B8311E62A814009655BB /* SecondViewController.m in Sources */,
