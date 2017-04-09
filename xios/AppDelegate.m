@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "FirstViewController.h"
 #import "Layout3ViewController.h"
+#import "BookViewController.h"
 #import "UIColor+Hex.h"
 
 @interface AppDelegate ()
@@ -31,8 +32,11 @@
     //FirstViewController *firstViewController = [[FirstViewController alloc] init];
     //self.window.rootViewController = firstViewController;
     
-    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController: [[Layout3ViewController alloc] init]];
-    self.window.rootViewController = nav;
+    //UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController: [[Layout3ViewController alloc] init]];
+    //self.window.rootViewController = nav;
+    
+    BookViewController *bookViewController = [[BookViewController alloc] init];
+    self.window.rootViewController = bookViewController;
     
     [self.window makeKeyAndVisible];
     return YES;
